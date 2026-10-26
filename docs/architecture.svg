@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 470" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#46535f"/>
+    </marker>
+    <style>
+      .box{fill:#fff;stroke:#c4cdd8;stroke-width:1.2}
+      .agent{fill:#00356b}
+      .code{fill:#f4f6f9;stroke:#7a8794;stroke-dasharray:4 3}
+      .t{fill:#10161d}
+      .tw{fill:#fff;font-weight:600}
+      .s{fill:#46535f;font-size:11.5px}
+      .sw{fill:#d6e3f5;font-size:11.5px}
+      .ln{stroke:#46535f;stroke-width:1.4;fill:none;marker-end:url(#arr)}
+      .dl{stroke:#9b2226;stroke-width:1.2;fill:none;stroke-dasharray:3 3;marker-end:url(#arr)}
+    </style>
+  </defs>
+
+  <!-- user -->
+  <rect class="box" x="10" y="200" width="110" height="64" rx="10"/>
+  <text class="t" x="65" y="226" text-anchor="middle" font-weight="600">Officer</text>
+  <text class="s" x="65" y="244" text-anchor="middle">company + goal</text>
+  <path class="ln" d="M120 232 H150"/>
+
+  <!-- guard -->
+  <rect class="code" x="152" y="196" width="104" height="72" rx="10"/>
+  <text class="t" x="204" y="222" text-anchor="middle" font-weight="600">Request guard</text>
+  <text class="s" x="204" y="240" text-anchor="middle">injection, off-limits,</text>
+  <text class="s" x="204" y="255" text-anchor="middle">budget, rate limit</text>
+  <path class="ln" d="M256 232 H286"/>
+  <path class="dl" d="M204 268 V330"/>
+  <text x="212" y="320" fill="#9b2226" font-size="11.5">refused: $0</text>
+
+  <!-- scout -->
+  <rect class="agent" x="288" y="186" width="140" height="92" rx="12"/>
+  <text class="tw" x="358" y="214" text-anchor="middle" font-size="15">Scout</text>
+  <text class="sw" x="358" y="234" text-anchor="middle">gpt-6-luna · tools</text>
+  <text class="sw" x="358" y="250" text-anchor="middle">≤14 requests, ≤16 calls</text>
+  <text class="sw" x="358" y="266" text-anchor="middle">output: ScoutReport</text>
+
+  <!-- tools -->
+  <g>
+    <rect class="box" x="250" y="14" width="216" height="140" rx="10"/>
+    <text class="t" x="262" y="36" font-weight="600">Tools → evidence ledger (S1, S2…)</text>
+    <text class="s" x="262" y="58">company_profile · companies.json</text>
+    <text class="s" x="262" y="78">find_trials · ClinicalTrials.gov v2</text>
+    <text class="s" x="262" y="98">find_copublications · Europe PMC</text>
+    <text class="s" x="262" y="118">search_faculty · 4,788 YSM faculty</text>
+    <text class="s" x="262" y="138">web_search (optional)</text>
+  </g>
+  <path class="ln" d="M345 186 V158"/>
+  <path class="ln" d="M372 158 V186"/>
+  <text class="s" x="476" y="96">untrusted data:</text>
+  <text class="s" x="476" y="112">injection sentences</text>
+  <text class="s" x="476" y="128">removed, wrapped</text>
+
+  <path class="ln" d="M428 232 H458"/>
+  <!-- code checks -->
+  <rect class="code" x="460" y="190" width="132" height="84" rx="10"/>
+  <text class="t" x="526" y="214" text-anchor="middle" font-weight="600">Code checks</text>
+  <text class="s" x="526" y="232" text-anchor="middle">source exists</text>
+  <text class="s" x="526" y="247" text-anchor="middle">names the person</text>
+  <text class="s" x="526" y="262" text-anchor="middle">recent · web re-fetched</text>
+  <path class="dl" d="M526 274 V330"/>
+
+  <path class="ln" d="M592 232 H622"/>
+  <!-- verifier -->
+  <rect class="agent" x="624" y="186" width="130" height="92" rx="12"/>
+  <text class="tw" x="689" y="214" text-anchor="middle" font-size="15">Verifier</text>
+  <text class="sw" x="689" y="234" text-anchor="middle">gpt-6-luna · no tools</text>
+  <text class="sw" x="689" y="250" text-anchor="middle">claim vs source text</text>
+  <text class="sw" x="689" y="266" text-anchor="middle">supported? current?</text>
+  <path class="dl" d="M689 278 V330"/>
+
+  <path class="ln" d="M754 232 H784"/>
+  <!-- writer -->
+  <rect class="agent" x="786" y="186" width="120" height="92" rx="12"/>
+  <text class="tw" x="846" y="214" text-anchor="middle" font-size="15">Writer</text>
+  <text class="sw" x="846" y="234" text-anchor="middle">gpt-6-luna · no tools</text>
+  <text class="sw" x="846" y="250" text-anchor="middle">rank + intro email</text>
+  <text class="sw" x="846" y="266" text-anchor="middle">cites [S#] only</text>
+
+  <path class="ln" d="M846 278 V312"/>
+  <rect class="code" x="770" y="314" width="152" height="58" rx="10"/>
+  <text class="t" x="846" y="336" text-anchor="middle" font-weight="600">Final scrub</text>
+  <text class="s" x="846" y="354" text-anchor="middle">emails/links not in a source</text>
+  <text class="s" x="846" y="367" text-anchor="middle">are removed</text>
+  <path class="ln" d="M846 372 V400"/>
+  <rect class="box" x="736" y="402" width="220" height="56" rx="10"/>
+  <text class="t" x="846" y="424" text-anchor="middle" font-weight="600">Briefing</text>
+  <text class="s" x="846" y="442" text-anchor="middle">introducers · sources · draft email</text>
+
+  <!-- dropped -->
+  <rect x="150" y="332" width="560" height="40" rx="8" fill="#fdecec" stroke="#e8b4b4"/>
+  <text x="430" y="357" text-anchor="middle" fill="#9b2226">Dropped claims and refusals are shown to the user and logged as safety events</text>
+
+  <!-- logging -->
+  <rect class="box" x="10" y="402" width="560" height="56" rx="10"/>
+  <text class="t" x="24" y="424" font-weight="600">Every step is logged</text>
+  <text class="s" x="24" y="442">trace (tool calls, drops, guards) · tokens per agent: input / cached / output / reasoning · cost · SQLite</text>
+</svg>

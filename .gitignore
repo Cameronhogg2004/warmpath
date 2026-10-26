@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+data/warmpath.db
+data/warmpath.db-*
+.DS_Store
+joke.txt

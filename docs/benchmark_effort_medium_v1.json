@@ -1,0 +1,347 @@
+[
+ {
+  "id": "49fa676040",
+  "company": "Medtronic",
+  "web": false,
+  "red_team": false,
+  "status": "done",
+  "duration_s": 41.3,
+  "cost_usd": 0.00395675,
+  "usage": {
+   "scout": {
+    "input": 9881,
+    "cached": 3425,
+    "output": 2274,
+    "reasoning": 916,
+    "requests": 4,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.0018168499999999998
+   },
+   "verifier": {
+    "input": 3812,
+    "cached": 0,
+    "output": 927,
+    "reasoning": 589,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0008447000000000001
+   },
+   "writer": {
+    "input": 1847,
+    "cached": 0,
+    "output": 2221,
+    "reasoning": 1307,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0012952
+   },
+   "total": {
+    "input": 15540,
+    "cached": 3425,
+    "output": 5422,
+    "reasoning": 2812,
+    "requests": 6,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00395675
+   }
+  },
+  "introducers": [
+   [
+    "John K Forrest",
+    "strong",
+    [
+     "clinical_trial",
+     "clinical_trial",
+     "co_publication",
+     "co_publication",
+     "co_publication",
+     "co_publication"
+    ]
+   ],
+   [
+    "Laura Marie Nally",
+    "strong",
+    [
+     "clinical_trial",
+     "co_publication",
+     "co_publication"
+    ]
+   ],
+   [
+    "Amit N. Vora",
+    "strong",
+    [
+     "clinical_trial",
+     "co_publication",
+     "co_publication"
+    ]
+   ],
+   [
+    "Scott Ardito",
+    "strong",
+    [
+     "clinical_trial",
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Charles Matouk",
+    "weak",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Prashanth Vallabhajosyula",
+    "weak",
+    [
+     "clinical_trial"
+    ]
+   ]
+  ],
+  "dropped": [
+   {
+    "name": "David P. Kuwayama",
+    "tie": "Named at the Yale site as principal investigator for Medtronic's Endurant stent graft ADVANCE trial.",
+    "stage": "verifier",
+    "reason": "The source lists Kuwayama on the Endurant trial but does not identify Medtronic or link the trial to it."
+   },
+   {
+    "name": "Marcia DeSousa",
+    "tie": "Named as the Yale-site contact for Medtronic's MiniMed extended-wear sensor and algorithm study.",
+    "stage": "verifier",
+    "reason": "The source lists DeSousa on the MiniMed study but does not identify Medtronic or link the study to it."
+   }
+  ],
+  "error": null,
+  "safety": []
+ },
+ {
+  "id": "880e1be35e",
+  "company": "Boehringer Ingelheim",
+  "web": false,
+  "red_team": false,
+  "status": "done",
+  "duration_s": 37.8,
+  "cost_usd": 0.0031502699999999997,
+  "usage": {
+   "scout": {
+    "input": 10209,
+    "cached": 3567,
+    "output": 2767,
+    "reasoning": 1752,
+    "requests": 4,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.0020833699999999998
+   },
+   "verifier": {
+    "input": 2148,
+    "cached": 0,
+    "output": 670,
+    "reasoning": 351,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0005497999999999999
+   },
+   "writer": {
+    "input": 926,
+    "cached": 0,
+    "output": 849,
+    "reasoning": 388,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0005171
+   },
+   "total": {
+    "input": 13283,
+    "cached": 3567,
+    "output": 4286,
+    "reasoning": 2491,
+    "requests": 6,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.0031502699999999997
+   }
+  },
+  "introducers": [
+   [
+    "Naftali Kaminski",
+    "strong",
+    [
+     "named_chair",
+     "co_publication"
+    ]
+   ],
+   [
+    "Mridu Gulati",
+    "strong",
+    [
+     "clinical_trial",
+     "co_publication"
+    ]
+   ]
+  ],
+  "dropped": [
+   {
+    "name": "Alessandro D. Santin, M.D.",
+    "tie": "Named as the Yale-site contact and overall Yale University official for the active afatinib trial in HER2-positive uterine serous carcinoma.",
+    "stage": "code check",
+    "reason": "the cited source does not mention this person"
+   },
+   {
+    "name": "Jeffrey Testani",
+    "tie": "Named as the Yale-site contact for the active trial Empagliflozin in Patients With Cirrhosis and Ascites, returned in the Boehringer Ingelheim trial search.",
+    "stage": "verifier",
+    "reason": "The active trial names Jeffrey Testani, but the source does not link the trial to Boehringer Ingelheim."
+   },
+   {
+    "name": "Randy Luciano",
+    "tie": "Named as the principal investigator at the Yale site for the active Transformative Research in Diabetic Nephropathy study, returned in the Boehringer Ingelheim trial search.",
+    "stage": "verifier",
+    "reason": "The active trial names Randy Luciano, but the source does not link the trial to Boehringer Ingelheim."
+   },
+   {
+    "name": "Katrina Blount",
+    "tie": "Named as a contact at the Yale site for the active Transformative Research in Diabetic Nephropathy study, returned in the Boehringer Ingelheim trial search.",
+    "stage": "verifier",
+    "reason": "The active trial names Katrina Blount, but the source does not link the trial to Boehringer Ingelheim."
+   },
+   {
+    "name": "Lisa Baker, R.N.",
+    "tie": "Named as a contact at the Yale site for the active afatinib trial in HER2-positive uterine serous carcinoma.",
+    "stage": "verifier",
+    "reason": "The active trial names Lisa Baker, but the source does not link the trial to Boehringer Ingelheim."
+   },
+   {
+    "name": "Maksym Minasyan",
+    "tie": "Named as a contact at the Yale site for the active IPF/ILD outcomes registry returned in the Boehringer Ingelheim trial search.",
+    "stage": "verifier",
+    "reason": "The active trial names Maksym Minasyan, but the source does not link the trial to Boehringer Ingelheim."
+   }
+  ],
+  "error": null,
+  "safety": []
+ },
+ {
+  "id": "99bd5b04e5",
+  "company": "Thermo Fisher Scientific",
+  "web": false,
+  "red_team": false,
+  "status": "done",
+  "duration_s": 38.1,
+  "cost_usd": 0.00339997,
+  "usage": {
+   "scout": {
+    "input": 7669,
+    "cached": 2357,
+    "output": 1809,
+    "reasoning": 814,
+    "requests": 4,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00145927
+   },
+   "verifier": {
+    "input": 2560,
+    "cached": 0,
+    "output": 580,
+    "reasoning": 218,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.000546
+   },
+   "writer": {
+    "input": 1597,
+    "cached": 0,
+    "output": 2470,
+    "reasoning": 1543,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0013947
+   },
+   "total": {
+    "input": 11826,
+    "cached": 2357,
+    "output": 4859,
+    "reasoning": 2575,
+    "requests": 6,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00339997
+   }
+  },
+  "introducers": [
+   [
+    "Zeeshan Mansuri",
+    "medium",
+    [
+     "co_publication",
+     "co_publication",
+     "co_publication"
+    ]
+   ],
+   [
+    "Liu Y",
+    "medium",
+    [
+     "co_publication",
+     "co_publication"
+    ]
+   ],
+   [
+    "Richard Formica",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Hamada Hamid Altalib",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Poojith Nuthalapati",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Pakstis A",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Kenneth Kidd",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Noffar Bar",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ]
+  ],
+  "dropped": [],
+  "error": null,
+  "safety": []
+ }
+]

@@ -1,0 +1,346 @@
+[
+ {
+  "id": "d8eeaf6705",
+  "company": "Medtronic",
+  "web": false,
+  "red_team": false,
+  "status": "done",
+  "duration_s": 42.8,
+  "cost_usd": 0.00333541,
+  "usage": {
+   "scout": {
+    "input": 13897,
+    "cached": 7231,
+    "output": 2132,
+    "reasoning": 1070,
+    "requests": 5,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00180491
+   },
+   "verifier": {
+    "input": 3837,
+    "cached": 0,
+    "output": 533,
+    "reasoning": 164,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0006502000000000001
+   },
+   "writer": {
+    "input": 1683,
+    "cached": 0,
+    "output": 1424,
+    "reasoning": 332,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0008803
+   },
+   "total": {
+    "input": 19417,
+    "cached": 7231,
+    "output": 4089,
+    "reasoning": 1566,
+    "requests": 7,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00333541
+   }
+  },
+  "introducers": [
+   [
+    "John K Forrest",
+    "strong",
+    [
+     "clinical_trial",
+     "co_publication"
+    ]
+   ],
+   [
+    "Amit N. Vora",
+    "strong",
+    [
+     "clinical_trial",
+     "co_publication"
+    ]
+   ],
+   [
+    "Laura Marie Nally",
+    "strong",
+    [
+     "clinical_trial",
+     "co_publication"
+    ]
+   ],
+   [
+    "Charles Matouk",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Kenneth Hung, M.D.",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "David P. Kuwayama",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Prashanth Vallabhajosyula",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Scott Ardito",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ]
+  ],
+  "dropped": [],
+  "error": null,
+  "safety": []
+ },
+ {
+  "id": "cc5d29648e",
+  "company": "Boehringer Ingelheim",
+  "web": false,
+  "red_team": false,
+  "status": "done",
+  "duration_s": 52.0,
+  "cost_usd": 0.00403313,
+  "usage": {
+   "scout": {
+    "input": 14712,
+    "cached": 7503,
+    "output": 3187,
+    "reasoning": 1998,
+    "requests": 5,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00238943
+   },
+   "verifier": {
+    "input": 2726,
+    "cached": 0,
+    "output": 712,
+    "reasoning": 402,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0006286
+   },
+   "writer": {
+    "input": 1681,
+    "cached": 0,
+    "output": 1694,
+    "reasoning": 813,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0010151000000000001
+   },
+   "total": {
+    "input": 19119,
+    "cached": 7503,
+    "output": 5593,
+    "reasoning": 3213,
+    "requests": 7,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00403313
+   }
+  },
+  "introducers": [
+   [
+    "Naftali Kaminski",
+    "strong",
+    [
+     "named_chair",
+     "co_publication"
+    ]
+   ],
+   [
+    "Mridu Gulati",
+    "strong",
+    [
+     "clinical_trial",
+     "co_publication"
+    ]
+   ],
+   [
+    "Jeffrey Testani",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Lisa Baker, R.N.",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Maksym Minasyan",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Ania Jastreboff",
+    "medium",
+    [
+     "co_publication",
+     "co_publication"
+    ]
+   ],
+   [
+    "Gerard Sanacora",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ]
+  ],
+  "dropped": [
+   {
+    "name": "Alessandro D. Santin, M.D.",
+    "tie": "Named as the Yale contact and overall official for an active trial of afatinib in HER2-positive uterine serous carcinoma that lists Boehringer Ingelheim as a collaborator.",
+    "stage": "code check",
+    "reason": "the cited source does not mention this person"
+   }
+  ],
+  "error": null,
+  "safety": []
+ },
+ {
+  "id": "cc53cd6265",
+  "company": "Thermo Fisher Scientific",
+  "web": false,
+  "red_team": false,
+  "status": "done",
+  "duration_s": 41.4,
+  "cost_usd": 0.0034103500000000004,
+  "usage": {
+   "scout": {
+    "input": 10465,
+    "cached": 4815,
+    "output": 2254,
+    "reasoning": 1313,
+    "requests": 5,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00174015
+   },
+   "verifier": {
+    "input": 2638,
+    "cached": 0,
+    "output": 735,
+    "reasoning": 362,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0006313
+   },
+   "writer": {
+    "input": 1604,
+    "cached": 0,
+    "output": 1757,
+    "reasoning": 828,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0010389000000000002
+   },
+   "total": {
+    "input": 14707,
+    "cached": 4815,
+    "output": 4746,
+    "reasoning": 2503,
+    "requests": 7,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.0034103500000000004
+   }
+  },
+  "introducers": [
+   [
+    "Zeeshan Mansuri",
+    "medium",
+    [
+     "co_publication",
+     "co_publication",
+     "co_publication"
+    ]
+   ],
+   [
+    "Richard Formica",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Lawrence Hirsch",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Hamada Hamid Altalib",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Pakstis A",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Kenneth Kidd",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Noffar Bar",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Sarah M. Perman",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ]
+  ],
+  "dropped": [],
+  "error": null,
+  "safety": []
+ }
+]

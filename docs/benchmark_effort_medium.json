@@ -1,0 +1,355 @@
+[
+ {
+  "id": "8506ca996a",
+  "company": "Medtronic",
+  "web": false,
+  "red_team": false,
+  "status": "done",
+  "duration_s": 30.4,
+  "cost_usd": 0.00351321,
+  "usage": {
+   "scout": {
+    "input": 13897,
+    "cached": 7231,
+    "output": 2201,
+    "reasoning": 1016,
+    "requests": 5,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00183941
+   },
+   "verifier": {
+    "input": 4021,
+    "cached": 0,
+    "output": 531,
+    "reasoning": 157,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0006676000000000001
+   },
+   "writer": {
+    "input": 1767,
+    "cached": 0,
+    "output": 1659,
+    "reasoning": 1034,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0010062
+   },
+   "total": {
+    "input": 19685,
+    "cached": 7231,
+    "output": 4391,
+    "reasoning": 2207,
+    "requests": 7,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00351321
+   }
+  },
+  "introducers": [
+   [
+    "Laura Marie Nally",
+    "strong",
+    [
+     "clinical_trial",
+     "co_publication"
+    ]
+   ],
+   [
+    "Kenneth Hung, M.D.",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Charles Matouk",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "John K Forrest",
+    "medium",
+    [
+     "clinical_trial",
+     "clinical_trial",
+     "co_publication"
+    ]
+   ],
+   [
+    "Amit N. Vora",
+    "weak",
+    [
+     "clinical_trial",
+     "co_publication"
+    ]
+   ],
+   [
+    "David P. Kuwayama",
+    "weak",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Prashanth Vallabhajosyula",
+    "weak",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Scott Ardito",
+    "weak",
+    [
+     "clinical_trial"
+    ]
+   ]
+  ],
+  "dropped": [
+   {
+    "name": "Amit Vora, MD",
+    "tie": "Principal investigator at the Yale site for Medtronic\u2019s Intrepid transcatheter mitral valve replacement trial.",
+    "stage": "code check",
+    "reason": "the cited source does not mention this person"
+   }
+  ],
+  "error": null,
+  "safety": []
+ },
+ {
+  "id": "258b437a2d",
+  "company": "Boehringer Ingelheim",
+  "web": false,
+  "red_team": false,
+  "status": "done",
+  "duration_s": 9.3,
+  "cost_usd": 0.00402953,
+  "usage": {
+   "scout": {
+    "input": 14712,
+    "cached": 7503,
+    "output": 3187,
+    "reasoning": 1998,
+    "requests": 5,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00238943
+   },
+   "verifier": {
+    "input": 2865,
+    "cached": 0,
+    "output": 677,
+    "reasoning": 347,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.000625
+   },
+   "writer": {
+    "input": 1681,
+    "cached": 0,
+    "output": 1694,
+    "reasoning": 813,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0010151000000000001
+   },
+   "total": {
+    "input": 19258,
+    "cached": 7503,
+    "output": 5558,
+    "reasoning": 3158,
+    "requests": 7,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00402953
+   }
+  },
+  "introducers": [
+   [
+    "Naftali Kaminski",
+    "strong",
+    [
+     "named_chair",
+     "co_publication"
+    ]
+   ],
+   [
+    "Mridu Gulati",
+    "strong",
+    [
+     "clinical_trial",
+     "co_publication"
+    ]
+   ],
+   [
+    "Jeffrey Testani",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Lisa Baker, R.N.",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Maksym Minasyan",
+    "strong",
+    [
+     "clinical_trial"
+    ]
+   ],
+   [
+    "Ania Jastreboff",
+    "medium",
+    [
+     "co_publication",
+     "co_publication"
+    ]
+   ],
+   [
+    "Gerard Sanacora",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ]
+  ],
+  "dropped": [
+   {
+    "name": "Alessandro D. Santin, M.D.",
+    "tie": "Named as the Yale contact and overall official for an active trial of afatinib in HER2-positive uterine serous carcinoma that lists Boehringer Ingelheim as a collaborator.",
+    "stage": "code check",
+    "reason": "the cited source does not mention this person"
+   }
+  ],
+  "error": null,
+  "safety": []
+ },
+ {
+  "id": "477121c6ce",
+  "company": "Thermo Fisher Scientific",
+  "web": false,
+  "red_team": false,
+  "status": "done",
+  "duration_s": 35.9,
+  "cost_usd": 0.0036140499999999997,
+  "usage": {
+   "scout": {
+    "input": 10465,
+    "cached": 4815,
+    "output": 2261,
+    "reasoning": 1156,
+    "requests": 5,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.00174365
+   },
+   "verifier": {
+    "input": 2836,
+    "cached": 0,
+    "output": 889,
+    "reasoning": 516,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0007281
+   },
+   "writer": {
+    "input": 1693,
+    "cached": 0,
+    "output": 1946,
+    "reasoning": 1034,
+    "requests": 1,
+    "tool_calls": 0,
+    "web_searches": 0,
+    "cost_usd": 0.0011423
+   },
+   "total": {
+    "input": 14994,
+    "cached": 4815,
+    "output": 5096,
+    "reasoning": 2706,
+    "requests": 7,
+    "tool_calls": 9,
+    "web_searches": 0,
+    "cost_usd": 0.0036140499999999997
+   }
+  },
+  "introducers": [
+   [
+    "Zeeshan Mansuri",
+    "medium",
+    [
+     "co_publication",
+     "co_publication",
+     "co_publication"
+    ]
+   ],
+   [
+    "Richard Formica",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Lawrence Hirsch",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Noffar Bar",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Sarah M. Perman",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Liu Y",
+    "medium",
+    [
+     "co_publication",
+     "co_publication"
+    ]
+   ],
+   [
+    "Pakstis A",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ],
+   [
+    "Kenneth Kidd",
+    "medium",
+    [
+     "co_publication"
+    ]
+   ]
+  ],
+  "dropped": [],
+  "error": null,
+  "safety": []
+ }
+]

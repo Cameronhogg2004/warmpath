@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WarmPath · Verified warm introductions</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand__mark">WP</span>
+      <div>
+        <h1>WarmPath</h1>
+        <p>Find the Yale person who can actually introduce you</p>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab is-active" data-view="search">New search</button>
+      <button class="tab" data-view="history">History</button>
+      <button class="tab" data-view="cost">Cost</button>
+      <button class="tab" data-view="safety">Safety</button>
+    </nav>
+    <div class="meter" id="meter" title="Today's spend against the daily budget">
+      <span id="meter-text">…</span>
+      <div class="meter__bar"><div id="meter-fill"></div></div>
+    </div>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+
+  <main>
+    <!-- New search -->
+    <section class="view is-active" id="view-search">
+      <div class="layout">
+        <div class="col-main">
+          <form class="card form" id="form" autocomplete="off">
+            <div class="form__row">
+              <label>Company
+                <input id="company" list="companies" placeholder="e.g. Medtronic" maxlength="120" required />
+                <datalist id="companies"></datalist>
+              </label>
+              <label class="grow">What do you want from them?
+                <input id="goal" placeholder="e.g. Recruit clinicians into the MHS program" maxlength="500" />
+              </label>
+            </div>
+            <div class="chips" id="goal-chips">
+              <button type="button" class="chip">Recruit clinicians into the Master of Health Science (MHS) program</button>
+              <button type="button" class="chip">Sponsored research partnership</button>
+              <button type="button" class="chip">Industry speaker for a Yale seminar series</button>
+            </div>
+            <div class="form__row form__row--end">
+              <label class="check"><input type="checkbox" id="web" /> Also search the web <span class="muted">(adds about 20k input tokens a run; $0.01 per search)</span></label>
+              <button type="button" class="linkish" id="red-team" title="Runs the real agents on a planted, poisoned paper record">Run the red-team test</button>
+              <button class="btn" id="go" type="submit">Find introducers</button>
+            </div>
+          </form>
+
+          <div id="run" class="run"></div>
+        </div>
+
+        <aside class="col-side">
+          <div class="card">
+            <h3 class="card__title">How it works</h3>
+            <ol class="how">
+              <li><b>Scout</b> searches active clinical trials at Yale sites, recent Yale–company papers and the faculty directory.</li>
+              <li><b>Code checks</b> drop any claim whose source does not exist, does not name the person, or is out of date.</li>
+              <li><b>Verifier</b> reads each claim next to its source and rules on it.</li>
+              <li><b>Writer</b> ranks who is left and drafts the intro request.</li>
+            </ol>
+            <p class="muted small">Emails come only from the Yale directory or a cited source. Nothing is guessed.</p>
+          </div>
+          <div class="card" id="trace-card" hidden>
+            <h3 class="card__title">Agent trace</h3>
+            <ol class="trace" id="trace"></ol>
+          </div>
+          <div class="card" id="usage-card" hidden>
+            <h3 class="card__title">Tokens and cost, this run</h3>
+            <div id="usage"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section class="view" id="view-history">
+      <div class="card">
+        <h2 class="card__title">Past runs</h2>
+        <table class="table" id="history"></table>
+      </div>
+    </section>
+
+    <!-- Cost -->
+    <section class="view" id="view-cost">
+      <div class="stats" id="stats"></div>
+      <div class="card">
+        <h2 class="card__title">Cost of each run, by agent</h2>
+        <div id="cost-bars" class="bars"></div>
+        <p class="muted small" id="prices"></p>
+      </div>
+    </section>
+
+    <!-- Safety -->
+    <section class="view" id="view-safety">
+      <div class="layout">
+        <div class="col-main">
+          <div class="card">
+            <h2 class="card__title">Safety events</h2>
+            <p class="muted small">Every refusal, removed injection, unsourced email or link, and limit hit is logged here.</p>
+            <table class="table" id="safety"></table>
+          </div>
+        </div>
+        <aside class="col-side">
+          <div class="card">
+            <h3 class="card__title">Try it</h3>
+            <p class="small">These go through the real app.</p>
+            <button class="btn btn--ghost btn--block" id="try-injection">Send a prompt-injection request</button>
+            <button class="btn btn--ghost btn--block" id="try-email">Ask it to guess an email</button>
+            <button class="btn btn--ghost btn--block" id="try-redteam">Run the red-team test</button>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Defences</h3>
+            <ul class="how">
+              <li>Requests that read like instructions to the AI are refused before any spend.</li>
+              <li>Instruction-like sentences in trial, paper and web data are removed before the model sees them.</li>
+              <li>Claims must cite a real source that names the person; an LLM judge checks each one.</li>
+              <li>Emails and links not found in a source are stripped from the final text.</li>
+              <li>Caps: tool calls, model requests, tokens per agent, 4-minute run time, $ per day.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
