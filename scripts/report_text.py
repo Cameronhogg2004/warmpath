@@ -141,6 +141,7 @@ REPORT = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"/>
   <div><b>Author:</b> Cameron Hogg</div>
   <div><b>Repository:</b> <a href="{REPO_URL}">{REPO_URL}</a></div>
   <div><b>App:</b> runs locally from a fresh clone in about three minutes (README, three commands), then opens at <code>http://127.0.0.1:8077</code>.</div>
+  <div><b>Built at:</b> Yale Ventures, Corporate and Strategic Engagement Office (CSEO). I use it in my own work there, and my supervisor has asked me to roll it out to the rest of the team.</div>
   <div><b>Data:</b> the public Yale School of Medicine directory, ClinicalTrials.gov and Europe PMC. AI Foundations final project, October 2026.</div>
   <div><b>In one sentence:</b> a three-agent app that tells a university corporate-relations officer which colleagues have a current, documented tie to a company, proves each tie with a public source, and drafts the request for an introduction.</div>
 </div>
@@ -407,7 +408,10 @@ relationship.</li>
 active Medtronic trials with a Yale site in this run. Nobody holds that map in their head.</li>
 </ul>
 
-<h3>6.2 A real user: me, on a real task</h3>
+<h3>6.2 Real users: me, and next the CSEO team at Yale Ventures</h3>
+<p>WarmPath is not only a class exercise. I have used it in my own work at Yale Ventures to find introducers for companies we are
+approaching. After seeing it, my supervisor asked me to get it out to the rest of the CSEO team for their use. That is the next step
+(section 7). The comparison below is the evidence I used to decide it was ready to share.</p>
 <p>The MHS strategy document I wrote for CSEO this term needed Yale introducers for six companies. By hand, with a general AI
 assistant, the introducer section took three revision rounds between 24 and 26 October 2026. Each round removed people with no
 current tie. Six names were removed in total because their link to the company was historical or indirect; one had retired
@@ -431,8 +435,8 @@ at the Yale site of active Medtronic trials.</li>
 </ul>
 <div class="call ok">This is the strongest evidence I have: on a real task with a real reviewer, the verified pipeline reproduced most of a
 hand-checked answer in seconds, and did not repeat the errors that made the hand-made version need three rounds.</div>
-<p><b>What I cannot claim yet:</b> I have not measured whether introductions requested through WarmPath get more replies. That needs a
-term of use in the office (section 7).</p>
+<p><b>What I cannot claim yet:</b> I have not measured whether introductions requested through WarmPath get more replies. The team
+roll-out is where that measurement will come from (section 7).</p>
 
 <h2>7. Limits and next steps</h2>
 <h3>Limits</h3>
@@ -450,7 +454,8 @@ term of use in the office (section 7).</p>
 </ul>
 <h3>Next steps</h3>
 <ol>
-<li>Pilot it in CSEO for a term, and log whether each introduction was requested, made and answered. That turns "time saved" into "meetings gained".</li>
+<li><b>Roll it out to the CSEO team at Yale Ventures</b>, as my supervisor has asked. That means a hosted version behind Yale sign-in, with shared run history.
+Log whether each introduction was requested, made and answered, which turns "time saved" into "meetings gained".</li>
 <li>Add sources: NIH RePORTER (industry co-funded grants), Open Payments (company payments to physicians, which are also a conflict-of-interest signal), and Yale's other school directories.</li>
 <li>Use a judge from a different model family for the Verifier, and run an evaluation set of hand-labelled company–person ties.</li>
 <li>Integrate with the Helpspace CRM, so that a verified introducer can be saved to the company's record and the outreach tracked.</li>
@@ -492,6 +497,7 @@ SLIDES = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"/>
 <section class="title" data-background-color="#00356b">
   <h1><span class="mark">WP</span>WarmPath</h1>
   <p class="lede">Find the Yale person who can actually introduce you, with a source for every claim.</p>
+  <p class="small">Built and used at Yale Ventures (CSEO), now being rolled out to the team</p>
   <p class="small">Three agents on gpt-6-luna · about {A['lean_time']:.0f} seconds and {money(per_run, 4)} a search</p>
   <p class="small">Cameron Hogg · AI Foundations final project · {REPO_URL}</p>
 </section>
@@ -559,14 +565,15 @@ SLIDES = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"/>
     <li>Real task, real reviewer: my MHS strategy needed <b>3 rounds over 2 days</b> to get introducers with a current tie</li>
     <li>WarmPath found <b>{hand_ever} of {len(hand)}</b> of my hand-checked introducers in about {A['lean_time']:.0f}s per company, for under a cent</li>
     <li>It agreed where the answer was "nobody" (Cigna){", and repeated none of the rejected names" if not rejected_hits else ""}</li>
-    <li>Users: NACRO's <b>550+ corporate-relations officers at 300+ institutions</b></li>
+    <li>In use at <b>Yale Ventures</b>: my supervisor has asked me to roll it out to the CSEO team</li>
+    <li>Beyond Yale: NACRO's <b>550+ corporate-relations officers at 300+ institutions</b></li>
   </ul>
 </section>
 
 <section>
   <h2>What's next</h2>
   <ul>
-    <li>Pilot in CSEO for a term: track introductions requested → made → answered</li>
+    <li>Roll out to the Yale Ventures CSEO team (supervisor's request): track introductions requested → made → answered</li>
     <li>More sources: NIH RePORTER, Open Payments, all Yale school directories</li>
     <li>A Verifier from a different model family, and a hand-labelled evaluation set</li>
     <li>Save verified introducers to the Helpspace CRM</li>
