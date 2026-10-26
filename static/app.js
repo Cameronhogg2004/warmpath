@@ -299,6 +299,6 @@ else if (hash === 'try=injection') $('#try-injection').click()
 else if (hash === 'try=email') $('#try-email').click()
 else if (['history', 'cost', 'safety'].includes(hash)) show(hash)
 else api('/api/runs').then((runs) => {
-  const first = runs.find((r) => r.status === 'done')
+  const first = runs.find((r) => r.status === 'done' && !/red-team/i.test(r.goal))
   if (first) poll(first.id)
 })
